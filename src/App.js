@@ -1,7 +1,8 @@
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const drumInfo = {
+  let drumInfo = {
     Q : {keypad : "Q" , displayText : "Heater 1" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"} ,
     W : {keypad : "W" , displayText : "Heater 2" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" } ,
     E : {keypad : "E" , displayText : "Heater 3" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"} ,
@@ -11,10 +12,15 @@ function App() {
     Z : {keypad : "Z" , displayText : "Kick-n'-Hat" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"} ,
     X : {keypad : "X" , displayText : "Kick" , audio : "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"} ,
     C : {keypad : "C" , displayText : "Closed-HH" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"} ,
-  } 
+  }
+  let label;
+  // const [text , setText] = useState("") ;
+  let audio ;
   function playAudio(event){
-    console.log(event.target.id);
-    
+    label = (event.target.id).split("-").shift();
+    // setText = drumInfo[label]["displayText"];
+    audio = new Audio(drumInfo[label]["audio"]);
+    audio.play();
   }
 
   return (
