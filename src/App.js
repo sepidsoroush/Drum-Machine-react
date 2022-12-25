@@ -1,22 +1,21 @@
 import './App.css';
 
 function App() {
-  const displayLabel = {
-    "Q" : "Heater 1" ,
-    "W" : "Heater 2" ,
-    "E" : "Heater 3" ,
-    "A" : "Heater 4" ,
-    "S" : "Clap" ,
-    "D" : "Open-HH" ,
-    "Z" : "Kick-n'-Hat" ,
-    "X" : "Kick" ,
-    "C" : "Closed-HH" ,
+  const drumInfo = {
+    Q : {keypad : "Q" , displayText : "Heater 1" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"} ,
+    W : {keypad : "W" , displayText : "Heater 2" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" } ,
+    E : {keypad : "E" , displayText : "Heater 3" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"} ,
+    A : {keypad : "A" , displayText : "Heater 4" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"} ,
+    S : {keypad : "S" , displayText : "Clap" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"} ,
+    D : {keypad : "D" , displayText : "Open-HH" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"} ,
+    Z : {keypad : "Z" , displayText : "Kick-n'-Hat" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"} ,
+    X : {keypad : "X" , displayText : "Kick" , audio : "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"} ,
+    C : {keypad : "C" , displayText : "Closed-HH" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"} ,
   } 
-  // function playAudio(event){
-  //   let x = event.target.id;
-  //   x.play();
+  function playAudio(event){
+    console.log(event.target.id);
     
-  // }
+  }
 
   return (
     <div className="App">
@@ -24,7 +23,7 @@ function App() {
         <div id="display"></div>
         <div className="pad-container">
           <div className='row'>
-            <div className='drum-pad' id='Q-pad'>
+            <div className='drum-pad' id='Q-pad' onClick={playAudio}>
               <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" className='clip' id='Q'></audio>
               <p>Q</p>
             </div>
