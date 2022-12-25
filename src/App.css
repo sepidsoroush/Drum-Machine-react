@@ -30,10 +30,14 @@
   margin-top: 20px;
   background-color: #525157;
   border-radius: 2px;
-  text-align: center;
   color: white;
   font-size: 20px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 .pad-container{
   display: flex;
