@@ -14,19 +14,19 @@ function App() {
     C : {keypad : "C" , displayText : "Closed-HH" , audio : "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"} ,
   }
   let label;
-  // const [text , setText] = useState("") ;
+  const [text , setText] = useState("") ;
   let audio ;
   function playAudio(event){
     label = (event.target.id).split("-").shift();
-    // setText = drumInfo[label]["displayText"];
     audio = new Audio(drumInfo[label]["audio"]);
     audio.play();
+    setText(drumInfo[label]["displayText"]);
   }
 
   return (
     <div className="App">
       <div id="drum-machine">
-        <div id="display"></div>
+        <div id="display">{text}</div>
         <div className="pad-container">
           <div className='row'>
             <div className='drum-pad' id='Q-pad' onClick={playAudio}>
