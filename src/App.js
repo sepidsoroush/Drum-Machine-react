@@ -22,9 +22,19 @@ function App() {
     audio.play();
     setText(drumInfo[label]["displayText"]);
   }
+  let key;
+  function pressKey(event){
+    key =  String.fromCharCode(event.keyCode);
+    if (drumInfo.hasOwnProperty(key)) {
+      audio = new Audio(drumInfo[key]["audio"]);
+      audio.play();
+      setText(drumInfo[key]["displayText"]);
+    }
+    
+  }
 
   return (
-    <div className="App">
+    <div className="App" onKeyDown={pressKey} tabIndex="0">
       <div id="drum-machine">
         <div id="display">{text}</div>
         <div className="pad-container">
