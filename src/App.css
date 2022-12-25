@@ -26,9 +26,14 @@
 }
 #display {
   min-width: 200px;
-  min-height: 50px;
-  border: 2px solid white;
+  min-height: 60px;
   margin-top: 20px;
+  background-color: #525157;
+  border-radius: 2px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 22px 70px 4px;
 }
 .pad-container{
   display: flex;
@@ -41,7 +46,6 @@
 .row{
   display: flex;
   justify-content: center;
-
 }
 .drum-pad{
   width: 70px;
@@ -52,5 +56,7 @@
   justify-content: center;
   align-items: center;
   background-color: #23a447;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  font-size: 20px;
+  font-weight: bold;
 }
