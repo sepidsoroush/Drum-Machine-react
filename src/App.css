@@ -14,6 +14,8 @@
 #drum-machine{ 
   display : flex;
   flex-direction: column;
+  min-width: 400px;
+  max-width: 600px;
   width: 50vw;
   min-height: 50vh;
   margin: auto;
@@ -44,7 +46,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   width: 50vw;
-  padding: 20px 50px;
+  padding: 20px;
   
 }
 .row{
