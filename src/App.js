@@ -33,39 +33,39 @@ function App() {
               <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" className='clip' id='Q'></audio>
               Q
             </div>
-            <div className='drum-pad' id='W-pad'>
+            <div className='drum-pad' id='W-pad' onClick={playAudio}>
               <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" className='clip' id='W'></audio>
               W
             </div>
-            <div className='drum-pad' id='E-pad'>
+            <div className='drum-pad' id='E-pad' onClick={playAudio}>
               <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" className='clip' id='E'></audio>
               E
             </div>
           </div>
           <div className='row'>
-            <div className='drum-pad' id='A-pad'>
+            <div className='drum-pad' id='A-pad' onClick={playAudio}>
               <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3" className='clip' id='A'></audio>
               A
             </div>
-            <div className='drum-pad' id='S-pad'>
+            <div className='drum-pad' id='S-pad' onClick={playAudio}>
               <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" className='clip' id='S'></audio>
               S
             </div>
-            <div className='drum-pad' id='D-pad'>
+            <div className='drum-pad' id='D-pad' onClick={playAudio}>
               <audio src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3" className='clip' id='D'></audio>
               D
             </div>
           </div>
           <div className='row'>
-            <div className='drum-pad' id='Z-pad'>
+            <div className='drum-pad' id='Z-pad' onClick={playAudio}>
               <audio src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" className='clip' id='Z'></audio>
               Z
             </div>
-            <div className='drum-pad' id='X-pad'>
+            <div className='drum-pad' id='X-pad' onClick={playAudio}>
               <audio src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" className='clip' id='X'></audio>
               X
             </div>
-            <div className='drum-pad' id='C-pad'>
+            <div className='drum-pad' id='C-pad' onClick={playAudio}>
               <audio src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3" className='clip' id='C'></audio>
               C
             </div>
