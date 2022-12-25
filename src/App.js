@@ -1,6 +1,23 @@
 import './App.css';
 
 function App() {
+  const displayLabel = {
+    "Q" : "Heater 1" ,
+    "W" : "Heater 2" ,
+    "E" : "Heater 3" ,
+    "A" : "Heater 4" ,
+    "S" : "Clap" ,
+    "D" : "Open-HH" ,
+    "Z" : "Kick-n'-Hat" ,
+    "X" : "Kick" ,
+    "C" : "Closed-HH" ,
+  } 
+  // function playAudio(event){
+  //   let x = event.target.id;
+  //   x.play();
+    
+  // }
+
   return (
     <div className="App">
       <div id="drum-machine">
